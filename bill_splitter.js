@@ -16,3 +16,9 @@ function calculateTip(bill){
         var tip = (bill *.2);
 }
 console.log('The value to tip is $' + calculateTip(100)); // Return "The value of the tip is $15"
+
+// Task 4: Utilize Arrays
+let bills = [275, 40, 430];
+let tips = bills.map(bill => calculateTip(bill));
+
+let totals = bills.map(bill => bill + calculateTip(bill));
