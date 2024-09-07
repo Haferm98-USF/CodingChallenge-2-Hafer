@@ -5,4 +5,4 @@ if (50 <= bill <= 300)
 else 
     var tip = (bill *.2);
 
-console.log(tip); // output = 15
+console.log('The bill was $' + bill + ', the tip was $' + tip + ', and the total value is $' + (bill+tip)); 
