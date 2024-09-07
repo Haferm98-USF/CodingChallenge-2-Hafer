@@ -22,3 +22,18 @@ let bills = [275, 40, 430];
 let tips = bills.map(bill => calculateTip(bill));
 
 let totals = bills.map(bill => bill + calculateTip(bill));
+
+// Task 5: Test Data
+console.log('Original Bill: $' + bills); //output for bills data set 1
+console.log('Added Tip: $' + tips); // output for tips data set 1
+console.log('Final Total: $' + totals); // output for totals data set 1
+
+//data set 2
+bills = [125, 555, 44]; // change values in bills array
+tips = bills.map(bill => calculateTip(bill)); // calculate new tips array
+
+totals = bills.map(bill => bill + calculateTip(bill)); // calculate new totals array
+
+console.log('Original Bill: $' + bills); //output for bills data set 2
+console.log('Added Tip: $' + tips); // output for tips data set 2
+console.log('Final Total: $' + totals); // output for totals data set 2
